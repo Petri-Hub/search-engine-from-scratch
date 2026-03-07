@@ -110,3 +110,9 @@ class Crawler:
 
     def get_max_pages_amount(self) -> int:
         return self.max_pages
+
+    def get_visited(self) -> set[str]:
+        return self.visited
+
+    def get_crawled(self) -> set[Page]:
+        return self.crawled
